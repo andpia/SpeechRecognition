@@ -4,9 +4,9 @@ recognizer = sr.Recognizer()
 
 # Acquisisci l'audio dal microfono
 with sr.Microphone() as source:
-    print("Parla qualcosa...")
+    print("Di qualcosa...")
     try:
-        audio_data = recognizer.listen(source, timeout=3)
+        audio_data = recognizer.listen(source, phrase_time_limit=1)
     except sr.WaitTimeoutError:
         print("Nessun audio rilevato entro il timeout.")
 
