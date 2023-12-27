@@ -1,3 +1,9 @@
+####################################
+# Required Packages:
+#   * SpeechRecognition
+#   * PyAudio
+####################################
+
 import speech_recognition as sr
 
 recognizer = sr.Recognizer()
