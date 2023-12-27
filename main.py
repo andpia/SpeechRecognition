@@ -12,7 +12,7 @@ recognizer = sr.Recognizer()
 with sr.Microphone() as source:
     print("Di qualcosa...")
     try:
-        audio_data = recognizer.listen(source, phrase_time_limit=1)
+        audio_data = recognizer.listen(source)
     except sr.WaitTimeoutError:
         print("Nessun audio rilevato entro il timeout.")
 
